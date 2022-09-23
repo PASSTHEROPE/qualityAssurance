@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220923 09:03:51.105" rpa="false" schemaversion="3">
+<suite id="s1" name="TestCase7a" source="/home/aditya/qa/FinalProject2/TestCase7a.robot">
+<test id="s1-t1" name="Open Deriv" line="11">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220923 09:03:51.198" endtime="20220923 09:03:51.198"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com/account/closing-account</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220923 09:03:51.198" level="INFO">Opening browser 'Chrome' to base url 'https://app.deriv.com/account/closing-account'.</msg>
+<status status="PASS" starttime="20220923 09:03:51.198" endtime="20220923 09:03:56.471"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220923 09:03:56.472" endtime="20220923 09:03:59.452"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>aditya.bardhan@besquare.com.my</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220923 09:03:59.453" level="INFO">Typing text 'aditya.bardhan@besquare.com.my' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20220923 09:03:59.452" endtime="20220923 09:04:05.599"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>Adi1234!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:05.600" level="INFO">Typing text 'Adi1234!' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220923 09:04:05.599" endtime="20220923 09:04:11.720"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:11.721" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220923 09:04:11.721" endtime="20220923 09:04:18.796"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class="dc-popover__target"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:18.798" level="INFO">Clicking element '//div[@class="dc-popover__target"]'.</msg>
+<status status="PASS" starttime="20220923 09:04:18.797" endtime="20220923 09:04:22.924"/>
+</kw>
+<status status="PASS" starttime="20220923 09:03:51.197" endtime="20220923 09:04:22.924"/>
+</test>
+<test id="s1-t2" name="TestCase" line="27">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:22.925" level="INFO">Clicking element '//*[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]'.</msg>
+<status status="PASS" starttime="20220923 09:04:22.925" endtime="20220923 09:04:27.016"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-text dc-checkbox__label" and contains(.,'Making deposits and withdrawals is difficult.')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:27.017" level="INFO">Clicking element '//*[@class="dc-text dc-checkbox__label" and contains(.,'Making deposits and withdrawals is difficult.')]'.</msg>
+<status status="PASS" starttime="20220923 09:04:27.016" endtime="20220923 09:04:31.107"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-text dc-checkbox__label" and contains(.,'I want to stop myself from trading.')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:31.108" level="INFO">Clicking element '//*[@class="dc-text dc-checkbox__label" and contains(.,'I want to stop myself from trading.')]'.</msg>
+<status status="PASS" starttime="20220923 09:04:31.107" endtime="20220923 09:04:35.184"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-text dc-checkbox__label" and contains(.,'I’m no longer interested in trading.')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:35.185" level="INFO">Clicking element '//*[@class="dc-text dc-checkbox__label" and contains(.,'I’m no longer interested in trading.')]'.</msg>
+<status status="PASS" starttime="20220923 09:04:35.184" endtime="20220923 09:04:39.268"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible"]</arg>
+<arg>CTRL+a+BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220923 09:04:39.269" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to //*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible"] element.</msg>
+<msg timestamp="20220923 09:04:43.583" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20220923 09:04:43.583" level="INFO">Sending key a</msg>
+<msg timestamp="20220923 09:04:43.583" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg timestamp="20220923 09:04:43.583" level="INFO">Releasing special key CONTROL.</msg>
+<msg timestamp="20220923 09:04:43.583" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20220923 09:04:39.269" endtime="20220923 09:04:45.616"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible"]</arg>
+<arg>hi im sharifah</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220923 09:04:45.617" level="INFO">Typing text 'hi im sharifah' into text field '//*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible"]'.</msg>
+<status status="PASS" starttime="20220923 09:04:45.617" endtime="20220923 09:04:51.788"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible" and contains(.,'do_to_improve')]</arg>
+<arg>CTRL+a+BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220923 09:04:51.790" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to //*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible" and contains(.,'do_to_improve')] element.</msg>
+<msg timestamp="20220923 09:04:55.918" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220923 09:04:55.919" level="FAIL">Element with locator '//*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible" and contains(.,'do_to_improve')]' not found.</msg>
+<status status="FAIL" starttime="20220923 09:04:51.789" endtime="20220923 09:04:55.920"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible" and contains(.,'do_to_improve')]</arg>
+<arg>hi im the afifi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220923 09:04:55.921" endtime="20220923 09:04:55.921"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-btn dc-btn__effect dc-btn--primary dc-btn__large"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220923 09:04:55.921" endtime="20220923 09:04:55.922"/>
+</kw>
+<status status="FAIL" starttime="20220923 09:04:22.924" endtime="20220923 09:04:55.923">Element with locator '//*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible" and contains(.,'do_to_improve')]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220923 09:03:51.107" endtime="20220923 09:04:55.924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="TestCase7a">TestCase7a</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
