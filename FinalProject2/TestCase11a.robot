@@ -45,5 +45,7 @@ TestCase
 
 
     Click Element    //*[@class="dc-btn dc-btn__effect dc-btn--primary dc-btn__large"]
+    Wait Until Page Contains Element    //*[@class="account-closure-warning-modal"]    30
+    Click Element    //*[@class="dc-btn dc-btn__effect dc-btn--primary dc-btn__large" and contains(.,'Close account')]
 
-#popup for close acc multiple selected
+#popup for close acc doneee

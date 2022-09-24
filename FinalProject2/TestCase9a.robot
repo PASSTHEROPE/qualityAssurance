@@ -38,12 +38,12 @@ TestCase
     #Press Keys    //*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible" and contains(.,'do_to_improve')]    CTRL+a+BACKSPACE
     #Input Text    //*[@class="dc-input__field dc-input__textarea dc-input__field--placeholder-visible" and contains(.,'do_to_improve')]   hi im the afifi
     Press Keys    //*[@name="other_trading_platforms"]    CTRL+a+BACKSPACE
-    Input Text    //*[@name="other_trading_platforms"]    hi im sharifah
+    Input Text    //*[@name="other_trading_platforms"]    hi im sharifah$#$?#
     Press Keys    //*[@name="do_to_improve"]    CTRL+a+BACKSPACE
-    Input Text    //*[@name="do_to_improve"]    hi im afififdidisyusibegumgumvernyivern
+    Input Text    //*[@name="do_to_improve"]    hi im afififdidisyusibegumgumvernyivern#$$##
 
 
 
     Click Element    //*[@class="dc-btn dc-btn__effect dc-btn--primary dc-btn__large"]
 
-#popup for close acc multiple selected
+#error for special char

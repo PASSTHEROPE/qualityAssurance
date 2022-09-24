@@ -27,9 +27,9 @@ Open Deriv
 TestCase
 
     Click Element    //*[@class="dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account"]
-    Click Element    //*[@class="dc-text dc-checkbox__label" and contains(.,'Making deposits and withdrawals is difficult.')]
-    Click Element    //*[@class="dc-text dc-checkbox__label" and contains(.,'I want to stop myself from trading.')]
-    Click Element    //*[@class="dc-text dc-checkbox__label" and contains(.,'I’m no longer interested in trading.')]
+    #Click Element    //*[@class="dc-text dc-checkbox__label" and contains(.,'Making deposits and withdrawals is difficult.')]
+    #Click Element    //*[@class="dc-text dc-checkbox__label" and contains(.,'I want to stop myself from trading.')]
+    #Click Element    //*[@class="dc-text dc-checkbox__label" and contains(.,'I’m no longer interested in trading.')]
 
    
 
@@ -45,5 +45,6 @@ TestCase
 
 
     Click Element    //*[@class="dc-btn dc-btn__effect dc-btn--primary dc-btn__large"]
+    
 
-#popup for close acc multiple selected
+#button greyed out when no checkbox
